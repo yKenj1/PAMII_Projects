@@ -6,45 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout>
-    <Button
-        android:id="@+id/buttonRoll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/DiceResult"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="252dp" />
-
-        <ImageView
-            android:id="@+id/DiceImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/dado"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="290dp"
-            tools:visibility="invisible" />
-
-    <SeekBar
-        android:id="@+id/seekBarSize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:max="5"
-        android:progress="1"
+        android:layout_marginStart="188dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/version"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnChange2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
-
-
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
