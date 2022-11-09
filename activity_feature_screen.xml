@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:textAlignment="center"
+    tools:context=".FeatureChurras">
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Disponibilidade próximos: "
+      android:textSize="16sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="16dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox2"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:text="11/11/2022"
+      app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+      tools:layout_editor_absoluteX="105dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox4"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="13/11/2022"
+      tools:layout_editor_absoluteX="107dp"
+      tools:layout_editor_absoluteY="329dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox3"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:checked="true"
+      android:text="12/11/2022"
+      app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+      tools:layout_editor_absoluteX="107dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:text="10/11/2022"
+      app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+      tools:layout_editor_absoluteX="105dp" />
+
+  <TextView
+      android:id="@+id/textDate"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="Data Selecionada"
+      android:textAlignment="center"
+      tools:layout_editor_absoluteX="105dp"
+      tools:layout_editor_absoluteY="420dp" />
+
+  <Button
+      android:id="@+id/btnReserve"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="Reservar"
+      tools:layout_editor_absoluteX="105dp"
+      tools:layout_editor_absoluteY="484dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
